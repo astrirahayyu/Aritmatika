@@ -8,6 +8,9 @@ Nama Program: menu_program.c
 double tambah(double a, double b) {
 	return a + b;
 }
+double bagi(double a, double b){
+	return a / b;
+}
 
 int main() {
 	int pilihan;
@@ -16,6 +19,7 @@ int main() {
 	printf("Menu Program\n");
 	printf("----------------------\n");
 	printf("1. Tambah\n");
+	printf(" 2. Pembagian\n");
 
 	printf("Masukkan pilihan Anda : ");
 	scanf("%d", &pilihan);
@@ -31,6 +35,10 @@ int main() {
 			printf("Hasil penjumlahan : ");
 			printf("%.1f\n", tambah(angka1, angka2));
 		break;
+		case 2 : 
+		printf("Hasil Pembagian : ");
+		printf("%.1f\n", bagi(angka1, angka2));
+        break;
 	}
 	return 0;
 }
